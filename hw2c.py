@@ -19,20 +19,20 @@ def GaussSeidel(Aaug, x, Niter = 15):
         return x
     def main():
         # Matrix 1
-        Aaug1 = [[3, 1, 1, 2],
-                 [1, 4, 1, 12],
-                 [2, 1, 2, 10]]
-        x1 = [0, 0, 0]
+        Aaug1 = [[3, 1, 1, 0],
+                 [1, 4, 1, 0],
+                 [2, 1, 2, 0]]
+        x1 = [2, 12, 10]
 
         solution1 = GaussSeidel(Aaug1, x1)
         print(f'solution1: {solution1}')
 
         # Matrix 2
-        Aaug2 = [[1, -10, 2, 4, 2],
-                 [3, 1, 4, 12, 12],
-                 [9, 2, 3, 4, 21],
-                 [-1, 2, 7, 3, 37]]
-        x2 = [0, 0, 0, 0, 0]
+        Aaug2 = [[1, -10, 2, 4, 0],
+                 [3, 1, 4, 12, 0],
+                 [9, 2, 3, 4, 0],
+                 [-1, 2, 7, 3, 0]]
+        x2 = [2, 12, 21, 37]
 
         solution2 = GaussSeidel(Aaug2, x2)
         print(f'solution2: {solution2}')
